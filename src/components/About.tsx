@@ -3,6 +3,20 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Code, Palette, Smartphone, Zap, Briefcase, GraduationCap, Award, Star, Calendar, MapPin } from "lucide-react";
 
+// Certificate images
+import certGoogleUX from "@/assets/cert-google-ux.jpg";
+import certMetaFrontend from "@/assets/cert-meta-frontend.jpg";
+import certAWSCloud from "@/assets/cert-aws-cloud.jpg";
+import certReactDev from "@/assets/cert-react-dev.jpg";
+import certAdobePhotoshop from "@/assets/cert-adobe-photoshop.jpg";
+import certFigmaAdvanced from "@/assets/cert-figma-advanced.jpg";
+import certFreeCodeCampJS from "@/assets/cert-freecodecamp-js.jpg";
+import certFreeCodeCampRWD from "@/assets/cert-freecodecamp-rwd.jpg";
+import certIBMPython from "@/assets/cert-ibm-python.jpg";
+import certGoogleMarketing from "@/assets/cert-google-marketing.jpg";
+import certScrumMaster from "@/assets/cert-scrum-master.jpg";
+import certCiscoSecurity from "@/assets/cert-cisco-security.jpg";
+
 export const About = () => {
   const skills = [
     {
@@ -95,18 +109,18 @@ export const About = () => {
   ];
 
   const certificates = [
-    { name: "Google UX Design Professional Certificate", issuer: "Google", year: "2024" },
-    { name: "Meta Front-End Developer Certificate", issuer: "Meta", year: "2024" },
-    { name: "AWS Cloud Practitioner", issuer: "Amazon", year: "2023" },
-    { name: "React Developer Certification", issuer: "React Training", year: "2023" },
-    { name: "Adobe Certified Expert - Photoshop", issuer: "Adobe", year: "2023" },
-    { name: "Figma Advanced Certification", issuer: "Figma", year: "2024" },
-    { name: "JavaScript Algorithms Certification", issuer: "FreeCodeCamp", year: "2023" },
-    { name: "Responsive Web Design", issuer: "FreeCodeCamp", year: "2022" },
-    { name: "Python for Data Science", issuer: "IBM", year: "2023" },
-    { name: "Digital Marketing Fundamentals", issuer: "Google", year: "2024" },
-    { name: "Scrum Master Certified", issuer: "Scrum Alliance", year: "2024" },
-    { name: "Cybersecurity Fundamentals", issuer: "Cisco", year: "2023" }
+    { name: "Google UX Design Professional Certificate", issuer: "Google", year: "2024", image: certGoogleUX },
+    { name: "Meta Front-End Developer Certificate", issuer: "Meta", year: "2024", image: certMetaFrontend },
+    { name: "AWS Cloud Practitioner", issuer: "Amazon", year: "2023", image: certAWSCloud },
+    { name: "React Developer Certification", issuer: "React Training", year: "2023", image: certReactDev },
+    { name: "Adobe Certified Expert - Photoshop", issuer: "Adobe", year: "2023", image: certAdobePhotoshop },
+    { name: "Figma Advanced Certification", issuer: "Figma", year: "2024", image: certFigmaAdvanced },
+    { name: "JavaScript Algorithms Certification", issuer: "FreeCodeCamp", year: "2023", image: certFreeCodeCampJS },
+    { name: "Responsive Web Design", issuer: "FreeCodeCamp", year: "2022", image: certFreeCodeCampRWD },
+    { name: "Python for Data Science", issuer: "IBM", year: "2023", image: certIBMPython },
+    { name: "Digital Marketing Fundamentals", issuer: "Google", year: "2024", image: certGoogleMarketing },
+    { name: "Scrum Master Certified", issuer: "Scrum Alliance", year: "2024", image: certScrumMaster },
+    { name: "Cybersecurity Fundamentals", issuer: "Cisco", year: "2023", image: certCiscoSecurity }
   ];
 
   const logoProjects = [
@@ -398,18 +412,21 @@ export const About = () => {
             <TabsContent value="certificates">
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {certificates.map((cert, index) => (
-                  <Card key={index} className="glass card-3d hover:glow-primary group">
-                    <CardContent className="p-6">
-                      <div className="flex items-start gap-3">
-                        <Award className="w-8 h-8 text-primary group-hover:text-gradient transition-colors flex-shrink-0 mt-1" />
-                        <div>
-                          <h3 className="font-bold mb-2 group-hover:text-gradient transition-colors">
-                            {cert.name}
-                          </h3>
-                          <p className="text-sm text-muted-foreground mb-1">{cert.issuer}</p>
-                          <p className="text-xs text-primary font-medium">{cert.year}</p>
-                        </div>
-                      </div>
+                  <Card key={index} className="glass card-3d hover:glow-primary group overflow-hidden">
+                    <div className="aspect-[4/3] overflow-hidden">
+                      <img 
+                        src={cert.image} 
+                        alt={cert.name}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                    <CardContent className="p-4">
+                      <h3 className="font-bold text-gradient group-hover:text-foreground transition-colors text-sm">
+                        {cert.name}
+                      </h3>
+                      <p className="text-muted-foreground text-xs mt-1">
+                        {cert.issuer} • {cert.year}
+                      </p>
                     </CardContent>
                   </Card>
                 ))}

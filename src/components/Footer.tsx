@@ -77,10 +77,10 @@ export const Footer = () => {
       <div className="container mx-auto px-6 relative z-10">
         
         {/* Main Footer Content */}
-        <div className="grid lg:grid-cols-4 gap-12 mb-12">
+        <div className="grid lg:grid-cols-2 gap-12 mb-12">
           
           {/* Brand Section */}
-          <div className="lg:col-span-2 space-y-6">
+          <div className="space-y-6">
             <div className="flex items-center gap-3">
               <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center">
                 <span className="text-xl font-bold text-primary-foreground">D</span>
@@ -127,22 +127,6 @@ export const Footer = () => {
                   className="block text-muted-foreground hover:text-gradient transition-colors duration-300"
                 >
                   {link.label}
-                </a>
-              ))}
-            </div>
-          </div>
-          
-          {/* Services */}
-          <div className="space-y-6">
-            <h3 className="text-lg font-bold text-gradient">Services</h3>
-            <div className="space-y-3">
-              {services.map((service) => (
-                <a
-                  key={service.label}
-                  href={service.href}
-                  className="block text-muted-foreground hover:text-gradient transition-colors duration-300"
-                >
-                  {service.label}
                 </a>
               ))}
             </div>
