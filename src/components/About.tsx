@@ -17,6 +17,12 @@ import certGoogleMarketing from "@/assets/cert-google-marketing.jpg";
 import certScrumMaster from "@/assets/cert-scrum-master.jpg";
 import certCiscoSecurity from "@/assets/cert-cisco-security.jpg";
 
+// Logo design images
+import logoEcoGreen from "@/assets/logo-eco-green.jpg";
+import logoTechStart from "@/assets/logo-techstart.jpg";
+import logoCafeAroma from "@/assets/logo-cafe-aroma.jpg";
+import logoFitnessPro from "@/assets/logo-fitness-pro.jpg";
+
 export const About = () => {
   const skills = [
     {
@@ -128,25 +134,25 @@ export const About = () => {
       title: "Eco Green Logo",
       client: "Environmental NGO",
       description: "Logo untuk organisasi lingkungan dengan konsep nature-friendly",
-      image: "/api/placeholder/300/300"
+      image: logoEcoGreen
     },
     {
       title: "TechStart Logo",
       client: "Technology Startup",
       description: "Modern minimalist logo untuk startup teknologi",
-      image: "/api/placeholder/300/300"
+      image: logoTechStart
     },
     {
       title: "Cafe Aroma Logo",
       client: "Coffee Shop",
       description: "Logo vintage untuk coffee shop dengan nuansa warm dan cozy",
-      image: "/api/placeholder/300/300"
+      image: logoCafeAroma
     },
     {
       title: "Fitness Pro Logo",
       client: "Gym & Fitness Center",
       description: "Bold dan energetic logo untuk pusat kebugaran",
-      image: "/api/placeholder/300/300"
+      image: logoFitnessPro
     }
   ];
 
