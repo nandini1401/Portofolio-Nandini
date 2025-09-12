@@ -1,10 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github, Eye } from "lucide-react";
+import { ProjectDetail } from "./ProjectDetail";
+import { useState } from "react";
 import projectEcommerce from "@/assets/project-ecommerce.jpg";
 import projectMobile from "@/assets/project-mobile.jpg";
 import projectDashboard from "@/assets/project-dashboard.jpg";
 
 export const Projects = () => {
+  const [selectedProject, setSelectedProject] = useState<any>(null);
+  
   const projects = [
     {
       id: 1,
@@ -120,6 +124,15 @@ export const Projects = () => {
     }
   ];
 
+  if (selectedProject) {
+    return (
+      <ProjectDetail 
+        project={selectedProject} 
+        onBack={() => setSelectedProject(null)} 
+      />
+    );
+  }
+
   return (
     <section id="projects" className="py-24 relative overflow-hidden">
       {/* Background Elements */}
@@ -147,7 +160,7 @@ export const Projects = () => {
             <div 
               key={project.id}
               className="glass rounded-3xl p-6 card-3d group cursor-pointer hover:glow-primary transition-all duration-300"
-              onClick={() => window.open(`/project/${project.id}`, '_blank')}
+              onClick={() => setSelectedProject(project)}
             >
               {/* Project Image */}
               <div className="relative mb-6">
