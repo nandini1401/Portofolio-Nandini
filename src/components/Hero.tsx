@@ -33,16 +33,17 @@ export const Hero = () => {
           <div className="space-y-8 slide-in-left">
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
-                <span className="text-gradient">UI/UX</span>{" "}
-                <span className="text-foreground">Designer</span>
+                <span className="text-foreground">Hi, Saya</span>{" "}
+                <span className="text-gradient">Nandini</span>
                 <br />
+                <span className="text-gradient">UI/UX Designer</span>{" "}
                 <span className="text-foreground">&</span>{" "}
-                <span className="text-gradient">Developer</span>
+                <span className="text-gradient">Web Developer</span>
               </h1>
               
               <p className="text-xl lg:text-2xl text-muted-foreground max-w-lg leading-relaxed">
-                Menciptakan pengalaman digital yang memukau dengan desain 3D modern dan 
-                interface yang responsif untuk masa depan.
+                Mahasiswa STTI SONY SUGEMA semester 5 yang passionate dalam menciptakan 
+                pengalaman digital yang cantik dan fungsional.
               </p>
             </div>
 
@@ -69,15 +70,26 @@ export const Hero = () => {
             </div>
 
             <div className="flex items-center gap-6 pt-4">
-              <Button variant="ghost" size="sm">
-                <Download className="mr-2" />
-                Download CV
-              </Button>
+              <a 
+                href="/cv-nandini.pdf" 
+                download="CV-Nandini-UI-UX-Designer.pdf"
+              >
+                <Button variant="ghost" size="sm">
+                  <Download className="mr-2" />
+                  Download CV
+                </Button>
+              </a>
               
-              <div className="text-sm text-muted-foreground">
-                <span className="block">Tersedia untuk</span>
-                <span className="text-gradient font-semibold">Project Freelance</span>
-              </div>
+              <a 
+                href="https://wa.me/6285714291570?text=Halo%20Nandini,%20saya%20tertarik%20untuk%20project%20freelance"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="text-sm text-muted-foreground cursor-pointer hover:text-gradient transition-colors">
+                  <span className="block">Tersedia untuk</span>
+                  <span className="text-gradient font-semibold">Project Freelance</span>
+                </div>
+              </a>
             </div>
           </div>
 

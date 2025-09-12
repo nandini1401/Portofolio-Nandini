@@ -8,38 +8,114 @@ export const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "E-Commerce Platform",
-      category: "Web Design & Development",
-      description: "Platform e-commerce modern dengan 3D product showcase, payment gateway terintegrasi, dan admin dashboard komprehensif.",
+      title: "Beauty E-Commerce Platform",
+      category: "E-Commerce Website",
+      description: "Platform belanja online untuk produk kecantikan dengan fitur virtual try-on dan review system yang interaktif.",
       image: projectEcommerce,
-      technologies: ["React", "Node.js", "MongoDB", "Stripe", "Three.js"],
-      features: ["3D Product Viewer", "Real-time Inventory", "AI Recommendations", "Multi-vendor Support"],
-      demoUrl: "#",
-      githubUrl: "#",
+      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+      features: ["Virtual Try-On", "Product Reviews", "Wishlist", "Payment Gateway"],
+      demoUrl: "https://beauty-store-demo.com",
+      originalPrice: "Rp 15.000.000",
+      discountPrice: "Rp 12.000.000",
+      discount: "20%",
       status: "Completed"
     },
     {
       id: 2,
-      title: "Mobile Banking App",
-      category: "Mobile UI/UX Design",
-      description: "Aplikasi mobile banking dengan interface futuristik, biometric authentication, dan real-time financial analytics.",
+      title: "Restaurant Booking System",
+      category: "Booking Website",
+      description: "Website reservasi restoran dengan sistem booking real-time, menu digital, dan integrasi payment online.",
       image: projectMobile,
-      technologies: ["React Native", "TypeScript", "Firebase", "Biometric Auth"],
-      features: ["Biometric Login", "Real-time Analytics", "QR Payments", "Budget Tracking"],
-      demoUrl: "#",
-      githubUrl: "#",
-      status: "In Progress"
+      technologies: ["Vue.js", "Laravel", "MySQL", "Midtrans"],
+      features: ["Real-time Booking", "Digital Menu", "Online Payment", "Table Management"],
+      demoUrl: "https://restaurant-booking-demo.com",
+      originalPrice: "Rp 12.000.000",
+      discountPrice: "Rp 9.600.000",
+      discount: "20%",
+      status: "Completed"
     },
     {
       id: 3,
-      title: "Creative Portfolio Dashboard",
-      category: "Dashboard Design",
-      description: "Portfolio dashboard untuk creative agency dengan project management tools, client portal, dan analytics dashboard.",
+      title: "Educational Learning Platform",
+      category: "Learning Management System",
+      description: "Platform pembelajaran online dengan video streaming, quiz interaktif, dan tracking progress siswa.",
       image: projectDashboard,
-      technologies: ["Vue.js", "D3.js", "PostgreSQL", "AWS"],
-      features: ["Project Management", "Client Portal", "Analytics", "File Sharing"],
-      demoUrl: "#",
-      githubUrl: "#",
+      technologies: ["React", "Firebase", "Node.js", "Socket.io"],
+      features: ["Video Streaming", "Interactive Quiz", "Progress Tracking", "Certificate"],
+      demoUrl: "https://learning-platform-demo.com",
+      originalPrice: "Rp 18.000.000",
+      discountPrice: "Rp 14.400.000",
+      discount: "20%",
+      status: "Completed"
+    },
+    {
+      id: 4,
+      title: "Fashion Portfolio Website",
+      category: "Portfolio Website",
+      description: "Website portfolio untuk fashion designer dengan galeri foto, lookbook, dan contact form yang elegant.",
+      image: projectEcommerce,
+      technologies: ["HTML/CSS", "JavaScript", "GSAP", "EmailJS"],
+      features: ["Photo Gallery", "Lookbook", "Contact Form", "Responsive Design"],
+      demoUrl: "https://fashion-portfolio-demo.com",
+      originalPrice: "Rp 8.000.000",
+      discountPrice: "Rp 6.400.000",
+      discount: "20%",
+      status: "Completed"
+    },
+    {
+      id: 5,
+      title: "Property Listing Website",
+      category: "Real Estate Website",
+      description: "Platform properti dengan fitur pencarian advanced, virtual tour, dan sistem kontrak online.",
+      image: projectMobile,
+      technologies: ["React", "Express.js", "PostgreSQL", "Mapbox"],
+      features: ["Advanced Search", "Virtual Tour", "Online Contract", "Map Integration"],
+      demoUrl: "https://property-listing-demo.com",
+      originalPrice: "Rp 20.000.000",
+      discountPrice: "Rp 16.000.000",
+      discount: "20%",
+      status: "Completed"
+    },
+    {
+      id: 6,
+      title: "Health & Wellness App",
+      category: "Health Website",
+      description: "Website konsultasi kesehatan online dengan booking dokter, medical records, dan telemedicine features.",
+      image: projectDashboard,
+      technologies: ["React", "Node.js", "MongoDB", "WebRTC"],
+      features: ["Doctor Booking", "Medical Records", "Video Consultation", "Health Tracking"],
+      demoUrl: "https://health-wellness-demo.com",
+      originalPrice: "Rp 25.000.000",
+      discountPrice: "Rp 20.000.000",
+      discount: "20%",
+      status: "In Progress"
+    },
+    {
+      id: 7,
+      title: "Wedding Organizer Website",
+      category: "Event Management Website",
+      description: "Website wedding organizer dengan package booking, vendor management, dan timeline planning tools.",
+      image: projectEcommerce,
+      technologies: ["Vue.js", "Laravel", "MySQL", "Stripe"],
+      features: ["Package Booking", "Vendor Management", "Timeline Planning", "Guest Management"],
+      demoUrl: "https://wedding-organizer-demo.com",
+      originalPrice: "Rp 16.000.000",
+      discountPrice: "Rp 12.800.000",
+      discount: "20%",
+      status: "Completed"
+    },
+    {
+      id: 8,
+      title: "Travel Agency Website",
+      category: "Travel & Tourism Website",
+      description: "Website travel agent dengan booking tour packages, hotel reservations, dan itinerary planner.",
+      image: projectMobile,
+      technologies: ["React", "Node.js", "MongoDB", "Payment Gateway"],
+      features: ["Tour Booking", "Hotel Reservation", "Itinerary Planner", "Travel Guide"],
+      demoUrl: "https://travel-agency-demo.com",
+      originalPrice: "Rp 22.000.000",
+      discountPrice: "Rp 17.600.000",
+      discount: "20%",
       status: "Completed"
     }
   ];
@@ -60,50 +136,31 @@ export const Projects = () => {
             <span className="text-gradient">Projects</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Koleksi project terpilih yang menampilkan keahlian dalam UI/UX design 
-            dan development dengan teknologi cutting-edge.
+            Koleksi berbagai jenis website yang telah saya kerjakan dengan 
+            design modern dan fungsionalitas yang optimal.
           </p>
         </div>
 
         {/* Projects Grid */}
-        <div className="space-y-24">
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <div 
               key={project.id}
-              className={`grid lg:grid-cols-2 gap-12 items-center ${
-                index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''
-              }`}
+              className="glass rounded-3xl p-6 card-3d group cursor-pointer hover:glow-primary transition-all duration-300"
+              onClick={() => window.open(`/project/${project.id}`, '_blank')}
             >
               {/* Project Image */}
-              <div className={`${index % 2 === 1 ? 'lg:col-start-2' : ''} slide-in-${index % 2 === 1 ? 'right' : 'left'}`}>
-                <div className="relative group">
-                  <div className="glass rounded-3xl p-4 card-3d">
-                    <div className="relative overflow-hidden rounded-2xl">
-                      <img 
-                        src={project.image} 
-                        alt={project.title}
-                        className="w-full h-64 lg:h-80 object-cover transition-transform duration-700 group-hover:scale-110"
-                      />
-                      
-                      {/* Overlay */}
-                      <div className="absolute inset-0 bg-gradient-primary opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex items-center justify-center">
-                        <div className="flex gap-4">
-                          <Button variant="glass" size="lg">
-                            <Eye className="mr-2" />
-                            Live Demo
-                          </Button>
-                          <Button variant="outline" size="lg">
-                            <Github className="mr-2" />
-                            Code
-                          </Button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+              <div className="relative mb-6">
+                <div className="relative overflow-hidden rounded-2xl">
+                  <img 
+                    src={project.image} 
+                    alt={project.title}
+                    className="w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
                   
                   {/* Status Badge */}
-                  <div className="absolute -top-3 -right-3">
-                    <div className={`px-3 py-1 rounded-full text-xs font-semibold ${
+                  <div className="absolute top-3 right-3">
+                    <div className={`px-2 py-1 rounded-full text-xs font-semibold ${
                       project.status === 'Completed' 
                         ? 'bg-success text-success-foreground' 
                         : 'bg-gradient-primary text-primary-foreground'
@@ -111,81 +168,74 @@ export const Projects = () => {
                       {project.status}
                     </div>
                   </div>
+
+                  {/* Discount Badge */}
+                  <div className="absolute top-3 left-3">
+                    <div className="bg-gradient-primary text-primary-foreground px-2 py-1 rounded-full text-xs font-bold flex items-center gap-1">
+                      <span>%</span>
+                      <span>{project.discount}</span>
+                    </div>
+                  </div>
                 </div>
               </div>
 
               {/* Project Details */}
-              <div className={`${index % 2 === 1 ? 'lg:col-start-1 lg:row-start-1' : ''} space-y-6 slide-in-${index % 2 === 1 ? 'left' : 'right'}`}>
+              <div className="space-y-4">
                 <div>
-                  <div className="text-sm text-gradient font-semibold mb-2">
+                  <div className="text-xs text-gradient font-semibold mb-2">
                     {project.category}
                   </div>
-                  <h3 className="text-3xl lg:text-4xl font-bold mb-4">
+                  <h3 className="text-xl font-bold mb-2 group-hover:text-gradient transition-colors">
                     {project.title}
                   </h3>
-                  <p className="text-muted-foreground leading-relaxed text-lg">
+                  <p className="text-muted-foreground text-sm leading-relaxed line-clamp-3">
                     {project.description}
                   </p>
                 </div>
 
                 {/* Technologies */}
-                <div>
-                  <h4 className="font-semibold mb-3">Technologies Used</h4>
-                  <div className="flex flex-wrap gap-2">
-                    {project.technologies.map((tech) => (
-                      <span 
-                        key={tech}
-                        className="px-3 py-1 bg-muted rounded-full text-sm font-medium hover:bg-gradient-primary hover:text-primary-foreground transition-all duration-300 cursor-pointer"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
+                <div className="flex flex-wrap gap-1">
+                  {project.technologies.slice(0, 3).map((tech) => (
+                    <span 
+                      key={tech}
+                      className="px-2 py-1 bg-muted/50 rounded-full text-xs text-muted-foreground"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                  {project.technologies.length > 3 && (
+                    <span className="px-2 py-1 bg-muted/50 rounded-full text-xs text-muted-foreground">
+                      +{project.technologies.length - 3}
+                    </span>
+                  )}
                 </div>
 
-                {/* Key Features */}
-                <div>
-                  <h4 className="font-semibold mb-3">Key Features</h4>
-                  <div className="grid grid-cols-2 gap-2">
-                    {project.features.map((feature) => (
-                      <div key={feature} className="flex items-center gap-2 text-sm">
-                        <div className="w-2 h-2 bg-gradient-primary rounded-full"></div>
-                        <span className="text-muted-foreground">{feature}</span>
-                      </div>
-                    ))}
+                {/* Pricing */}
+                <div className="flex items-center justify-between pt-4 border-t border-glass-border/20">
+                  <div>
+                    <div className="text-xs text-muted-foreground line-through">
+                      {project.originalPrice}
+                    </div>
+                    <div className="text-lg font-bold text-gradient">
+                      {project.discountPrice}
+                    </div>
                   </div>
-                </div>
-
-                {/* Action Buttons */}
-                <div className="flex gap-4 pt-4">
-                  <Button variant="default" size="lg" className="group">
-                    <ExternalLink className="mr-2 transition-transform group-hover:scale-110" />
-                    View Project
-                  </Button>
                   
-                  <Button variant="outline" size="lg" className="group">
-                    <Github className="mr-2 transition-transform group-hover:scale-110" />
-                    Source Code
-                  </Button>
+                  <a 
+                    href={project.demoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    <Button variant="outline" size="sm" className="group">
+                      <Eye className="mr-1 w-3 h-3" />
+                      Demo
+                    </Button>
+                  </a>
                 </div>
               </div>
             </div>
           ))}
-        </div>
-
-        {/* More Projects CTA */}
-        <div className="text-center mt-20 fade-in-up">
-          <div className="glass rounded-3xl p-8 inline-block">
-            <h3 className="text-2xl font-bold mb-4">
-              Ingin melihat project lainnya?
-            </h3>
-            <p className="text-muted-foreground mb-6">
-              Explore lebih banyak case studies dan project portfolio saya
-            </p>
-            <Button variant="hero" size="xl">
-              View All Projects
-            </Button>
-          </div>
         </div>
       </div>
     </section>

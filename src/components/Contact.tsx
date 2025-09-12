@@ -29,14 +29,14 @@ export const Contact = () => {
     {
       icon: <Mail className="w-6 h-6" />,
       title: "Email",
-      value: "hello@designer.com",
+      value: "nandini14012006@gmail.com",
       description: "Kirim email untuk project inquiry"
     },
     {
       icon: <Phone className="w-6 h-6" />,
-      title: "Phone",
-      value: "+62 812-3456-7890",
-      description: "Available Mon-Fri, 9AM-6PM"
+      title: "WhatsApp",
+      value: "+62 857-1429-1570",
+      description: "Available untuk konsultasi project"
     },
     {
       icon: <MapPin className="w-6 h-6" />,
@@ -197,20 +197,32 @@ export const Contact = () => {
               </h3>
               
               <div className="space-y-4">
-                <Button variant="default" size="lg" className="w-full justify-start group">
-                  <MessageCircle className="mr-3 transition-transform group-hover:scale-110" />
-                  WhatsApp Chat
-                </Button>
+                <a 
+                  href="https://wa.me/6285714291570?text=Halo%20Nandini,%20saya%20tertarik%20untuk%20konsultasi%20project"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button variant="default" size="lg" className="w-full justify-start group">
+                    <MessageCircle className="mr-3 transition-transform group-hover:scale-110" />
+                    WhatsApp Chat
+                  </Button>
+                </a>
                 
                 <Button variant="outline" size="lg" className="w-full justify-start group">
                   <Calendar className="mr-3 transition-transform group-hover:scale-110" />
                   Schedule Meeting
                 </Button>
                 
-                <Button variant="ghost" size="lg" className="w-full justify-start group">
-                  <Mail className="mr-3 transition-transform group-hover:scale-110" />
-                  Send Direct Email
-                </Button>
+                <a 
+                  href="mailto:nandini14012006@gmail.com?subject=Project%20Inquiry&body=Halo%20Nandini,%20saya%20tertarik%20untuk%20membuat%20website"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button variant="ghost" size="lg" className="w-full justify-start group">
+                    <Mail className="mr-3 transition-transform group-hover:scale-110" />
+                    Send Direct Email
+                  </Button>
+                </a>
               </div>
             </div>
 

@@ -23,9 +23,9 @@ export const About = () => {
     },
     {
       icon: <Zap className="w-8 h-8" />,
-      title: "3D & Animation",
-      description: "Implementasi elemen 3D dan animasi untuk meningkatkan user engagement",
-      tools: ["Three.js", "Blender", "After Effects", "Lottie"]
+      title: "Web Developer",
+      description: "Mengembangkan website modern dengan teknologi terkini dan performa optimal",
+      tools: ["HTML/CSS", "JavaScript", "React", "Node.js"]
     }
   ];
 
@@ -45,8 +45,8 @@ export const About = () => {
             <span className="text-foreground">Saya</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Passionate UI/UX Designer dan Frontend Developer dengan pengalaman 5+ tahun 
-            dalam menciptakan solusi digital yang inovatif dan user-centric.
+            Saya Nandini, mahasiswa semester 5 di STTI SONY SUGEMA yang passionate dalam 
+            UI/UX Design dan Web Development dengan pendekatan yang fresh dan kreatif.
           </p>
         </div>
 
@@ -59,31 +59,31 @@ export const About = () => {
               <h3 className="text-2xl font-bold text-gradient mb-4">My Journey</h3>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Dimulai dari ketertarikan pada seni digital dan teknologi, saya mengembangkan 
-                  passion dalam menciptakan pengalaman user yang memorable dan functional.
+                  Sebagai mahasiswa yang aktif di STTI SONY SUGEMA, saya mengembangkan 
+                  passion dalam design yang tidak hanya cantik tapi juga fungsional dan user-friendly.
                 </p>
                 <p>
-                  Dengan pengalaman di berbagai industri, dari startup hingga enterprise, 
-                  saya memahami betul pentingnya balance antara kreativitas dan usability.
+                  Melalui berbagai project akademik dan freelance, saya belajar memahami 
+                  kebutuhan user dan menciptakan solusi digital yang tepat sasaran.
                 </p>
                 <p>
-                  Saat ini fokus pada pengembangan interface 3D modern dan implementasi 
-                  teknologi terdepan untuk menciptakan web experiences yang futuristik.
+                  Saat ini fokus pada pengembangan skill di bidang Web Development dan 
+                  implementasi design modern dengan teknologi terkini.
                 </p>
               </div>
               
               <div className="mt-6 pt-6 border-t border-glass-border">
                 <div className="flex flex-wrap gap-4">
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-gradient">50+</div>
+                    <div className="text-2xl font-bold text-gradient">15+</div>
                     <div className="text-sm text-muted-foreground">Projects</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-gradient">30+</div>
+                    <div className="text-2xl font-bold text-gradient">10+</div>
                     <div className="text-sm text-muted-foreground">Happy Clients</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-gradient">5+</div>
+                    <div className="text-2xl font-bold text-gradient">2+</div>
                     <div className="text-sm text-muted-foreground">Years Experience</div>
                   </div>
                 </div>
@@ -173,9 +173,15 @@ export const About = () => {
 
         {/* CTA Section */}
         <div className="text-center mt-16 fade-in-up">
-          <Button variant="hero" size="xl">
-            Mari Berkolaborasi
-          </Button>
+          <a 
+            href="mailto:nandini14012006@gmail.com?subject=Kolaborasi%20Project&body=Halo%20Nandini,%20saya%20tertarik%20untuk%20berkolaborasi"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button variant="hero" size="xl">
+              Mari Berkolaborasi
+            </Button>
+          </a>
         </div>
       </div>
     </section>
