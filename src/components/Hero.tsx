@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Download, Mail } from "lucide-react";
-import heroBackground from "@/assets/hero-background.jpg";
 import designerAvatar from "@/assets/designer-avatar.jpg";
 
 export const Hero = () => {
@@ -12,12 +11,6 @@ export const Hero = () => {
     <section 
       id="hero" 
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
-      style={{
-        backgroundImage: `linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.6)), url(${heroBackground})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed'
-      }}
     >
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
