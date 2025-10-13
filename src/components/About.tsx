@@ -17,12 +17,6 @@ import certGoogleMarketing from "@/assets/cert-google-marketing.jpg";
 import certScrumMaster from "@/assets/cert-scrum-master.jpg";
 import certCiscoSecurity from "@/assets/cert-cisco-security.jpg";
 
-// Logo design images
-import logoEcoGreen from "@/assets/logo-eco-green.jpg";
-import logoTechStart from "@/assets/logo-techstart.jpg";
-import logoCafeAroma from "@/assets/logo-cafe-aroma.jpg";
-import logoFitnessPro from "@/assets/logo-fitness-pro.jpg";
-
 export const About = () => {
   const skills = [
     {
@@ -129,33 +123,6 @@ export const About = () => {
     { name: "Cybersecurity Fundamentals", issuer: "Cisco", year: "2023", image: certCiscoSecurity }
   ];
 
-  const logoProjects = [
-    {
-      title: "Eco Green Logo",
-      client: "Environmental NGO",
-      description: "Logo untuk organisasi lingkungan dengan konsep nature-friendly",
-      image: logoEcoGreen
-    },
-    {
-      title: "TechStart Logo",
-      client: "Technology Startup",
-      description: "Modern minimalist logo untuk startup teknologi",
-      image: logoTechStart
-    },
-    {
-      title: "Cafe Aroma Logo",
-      client: "Coffee Shop",
-      description: "Logo vintage untuk coffee shop dengan nuansa warm dan cozy",
-      image: logoCafeAroma
-    },
-    {
-      title: "Fitness Pro Logo",
-      client: "Gym & Fitness Center",
-      description: "Bold dan energetic logo untuk pusat kebugaran",
-      image: logoFitnessPro
-    }
-  ];
-
   return (
     <section id="about" className="py-24 relative overflow-hidden">
       {/* Background Elements */}
@@ -197,23 +164,6 @@ export const About = () => {
                   Saat ini fokus pada pengembangan skill di bidang Web Development dan 
                   implementasi design modern dengan teknologi terkini.
                 </p>
-              </div>
-              
-              <div className="mt-6 pt-6 border-t border-glass-border">
-                <div className="flex flex-wrap gap-4">
-                  <div className="text-center">
-                    <div className="text-2xl font-bold text-gradient">15+</div>
-                    <div className="text-sm text-muted-foreground">Projects</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-2xl font-bold text-gradient">10+</div>
-                    <div className="text-sm text-muted-foreground">Happy Clients</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-2xl font-bold text-gradient">2+</div>
-                    <div className="text-sm text-muted-foreground">Years Experience</div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -267,12 +217,11 @@ export const About = () => {
         {/* Detailed Information Tabs */}
         <div className="fade-in-up">
           <Tabs defaultValue="skills" className="w-full">
-            <TabsList className="grid w-full grid-cols-5 mb-8">
+            <TabsList className="grid w-full grid-cols-4 mb-8">
               <TabsTrigger value="skills">Skills & Tools</TabsTrigger>
               <TabsTrigger value="experience">Pengalaman</TabsTrigger>
               <TabsTrigger value="education">Pendidikan</TabsTrigger>
               <TabsTrigger value="certificates">Sertifikat</TabsTrigger>
-              <TabsTrigger value="logos">Logo Design</TabsTrigger>
             </TabsList>
 
             {/* Skills & Tools Tab */}
@@ -438,42 +387,7 @@ export const About = () => {
                 ))}
               </div>
             </TabsContent>
-
-            {/* Logo Projects Tab */}
-            <TabsContent value="logos">
-              <div className="grid md:grid-cols-2 gap-6">
-                {logoProjects.map((logo, index) => (
-                  <Card key={index} className="glass card-3d hover:glow-primary group overflow-hidden">
-                    <div className="aspect-square bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center">
-                      <div className="w-32 h-32 bg-muted rounded-full flex items-center justify-center">
-                        <Palette className="w-16 h-16 text-muted-foreground" />
-                      </div>
-                    </div>
-                    <CardContent className="p-6">
-                      <h3 className="font-bold text-lg mb-2 group-hover:text-gradient transition-colors">
-                        {logo.title}
-                      </h3>
-                      <p className="text-sm text-primary font-medium mb-2">{logo.client}</p>
-                      <p className="text-sm text-muted-foreground">{logo.description}</p>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-            </TabsContent>
           </Tabs>
-        </div>
-
-        {/* CTA Section */}
-        <div className="text-center mt-16 fade-in-up">
-          <a 
-            href="mailto:nandini14012006@gmail.com?subject=Kolaborasi%20Project&body=Halo%20Nandini,%20saya%20tertarik%20untuk%20berkolaborasi"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Button variant="hero" size="xl">
-              Mari Berkolaborasi
-            </Button>
-          </a>
         </div>
       </div>
     </section>

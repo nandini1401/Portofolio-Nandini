@@ -69,7 +69,7 @@ export const Hero = () => {
               </Button>
             </div>
 
-            <div className="flex items-center gap-6 pt-4">
+            <div className="pt-4">
               <a 
                 href="/cv-nandini.pdf" 
                 download="CV-Nandini-UI-UX-Designer.pdf"
@@ -78,17 +78,6 @@ export const Hero = () => {
                   <Download className="mr-2" />
                   Download CV
                 </Button>
-              </a>
-              
-              <a 
-                href="https://wa.me/6285714291570?text=Halo%20Nandini,%20saya%20tertarik%20untuk%20project%20freelance"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div className="text-sm text-muted-foreground cursor-pointer hover:text-gradient transition-colors">
-                  <span className="block">Tersedia untuk</span>
-                  <span className="text-gradient font-semibold">Project Freelance</span>
-                </div>
               </a>
             </div>
           </div>

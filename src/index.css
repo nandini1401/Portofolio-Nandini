@@ -6,32 +6,32 @@
 
 @layer base {
   :root {
-    /* Main Background & Text */
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
+    /* Main Background & Text - Navy, Black, White */
+    --background: 220 30% 5%;
+    --foreground: 0 0% 100%;
 
     /* Glass Morphism Cards */
-    --card: 217 14% 10%;
-    --card-foreground: 0 0% 95%;
-    --glass: 217 14% 15%;
-    --glass-border: 217 20% 25%;
+    --card: 220 25% 8%;
+    --card-foreground: 0 0% 98%;
+    --glass: 220 20% 12%;
+    --glass-border: 220 15% 20%;
 
-    /* Brand Colors - Feminine Pink to Purple Gradient */
-    --primary: 320 85% 70%;
+    /* Brand Colors - Galaxy Purple & Navy */
+    --primary: 265 85% 65%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 330 85% 85%;
+    --primary-glow: 270 90% 75%;
     
-    --secondary: 280 80% 70%;
+    --secondary: 220 60% 25%;
     --secondary-foreground: 0 0% 100%;
-    --secondary-glow: 290 85% 85%;
+    --secondary-glow: 220 70% 35%;
 
     /* Accent & Interactive */
-    --accent: 217 91% 60%;
+    --accent: 265 85% 65%;
     --accent-foreground: 0 0% 100%;
-    --accent-glow: 224 76% 78%;
+    --accent-glow: 270 90% 75%;
 
-    --muted: 217 32% 17%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 220 20% 15%;
+    --muted-foreground: 220 10% 60%;
 
     /* System Colors */
     --destructive: 0 84% 60%;
@@ -39,25 +39,25 @@
     --success: 142 76% 36%;
     --success-foreground: 0 0% 98%;
 
-    --border: 217 32% 17%;
-    --input: 217 32% 17%;
-    --ring: 217 91% 60%;
+    --border: 220 20% 15%;
+    --input: 220 20% 15%;
+    --ring: 265 85% 65%;
 
     --radius: 0.75rem;
 
-    /* 3D Effects & Gradients - Feminine Theme */
-    --gradient-primary: linear-gradient(135deg, hsl(320 85% 70%), hsl(280 80% 70%));
-    --gradient-secondary: linear-gradient(135deg, hsl(280 80% 70%), hsl(320 85% 70%));
-    --gradient-hero: linear-gradient(135deg, hsl(240 10% 3.9%), hsl(280 20% 10%), hsl(320 40% 8%));
-    --gradient-glass: linear-gradient(135deg, hsl(280 14% 15% / 0.1), hsl(320 60% 70% / 0.1));
-    --gradient-glow: radial-gradient(600px circle at var(--mouse-x, 0) var(--mouse-y, 0), hsl(320 85% 70% / 0.15), transparent 40%);
+    /* 3D Effects & Gradients - Galaxy Purple Theme */
+    --gradient-primary: linear-gradient(135deg, hsl(265 85% 65%), hsl(285 80% 55%));
+    --gradient-secondary: linear-gradient(135deg, hsl(220 60% 25%), hsl(265 85% 65%));
+    --gradient-hero: linear-gradient(135deg, hsl(220 30% 5%), hsl(220 40% 8%), hsl(265 50% 10%));
+    --gradient-glass: linear-gradient(135deg, hsl(220 20% 12% / 0.2), hsl(265 40% 30% / 0.1));
+    --gradient-glow: radial-gradient(600px circle at var(--mouse-x, 0) var(--mouse-y, 0), hsl(265 85% 65% / 0.15), transparent 40%);
 
     /* 3D Shadows */
-    --shadow-elevation-low: 0 2px 8px -2px hsl(217 91% 60% / 0.1);
-    --shadow-elevation-medium: 0 8px 24px -4px hsl(217 91% 60% / 0.15), 0 4px 8px -2px hsl(262 83% 58% / 0.1);
-    --shadow-elevation-high: 0 16px 32px -4px hsl(217 91% 60% / 0.2), 0 8px 16px -4px hsl(262 83% 58% / 0.15);
-    --shadow-glow: 0 0 32px hsl(217 91% 60% / 0.3);
-    --shadow-purple-glow: 0 0 32px hsl(262 83% 58% / 0.3);
+    --shadow-elevation-low: 0 2px 8px -2px hsl(265 85% 65% / 0.1);
+    --shadow-elevation-medium: 0 8px 24px -4px hsl(265 85% 65% / 0.15), 0 4px 8px -2px hsl(265 80% 50% / 0.1);
+    --shadow-elevation-high: 0 16px 32px -4px hsl(265 85% 65% / 0.2), 0 8px 16px -4px hsl(265 80% 50% / 0.15);
+    --shadow-glow: 0 0 32px hsl(265 85% 65% / 0.3);
+    --shadow-purple-glow: 0 0 32px hsl(285 80% 55% / 0.3);
 
     /* Animations & Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
