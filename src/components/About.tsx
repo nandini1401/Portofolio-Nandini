@@ -109,7 +109,7 @@ export const About = () => {
       status: "Semester 4",
       gpa: "IPK: 3.25 / 4.00",
       achievements: [
-        "Sedang menempuh Semester 4",
+        "Sedang menempuh Semester 5",
       ]
     }
   ];
