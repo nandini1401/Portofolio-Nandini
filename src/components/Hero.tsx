@@ -31,9 +31,10 @@ export const Hero = () => {
                 <br />
                 <span className="text-gradient">UI/UX Designer</span>{" "}
                 <span className="text-foreground">&</span>{" "}
-                <span className="text-gradient">ABC</span>
+                <span className="text-gradient">sayang a rizal</span>
               </h1>
-              
+        
+
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
