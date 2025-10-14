@@ -45,35 +45,14 @@ export const Footer = () => {
 
   return (
     <footer className="relative py-10 overflow-hidden">
-      {/* Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-0 left-1/4 w-64 h-640 bg-gradient-primary opacity-5 rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-gradient-secondary opacity-5 rounded-full blur-3xl"></div>
       </div>
 
       <div className="container mx-auto px-106 relative z-100">
-        <div className="flex justify-center">
-          <div className="flex gap-7">
-            {socialLinks.map((social) => (
-              <a
-                key={social.label}
-                href={social.url}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  className="glass hover:bg-gradient-primary hover:text-primary-foreground group"
-                  aria-label={social.label}
-                >
-                  <span className="group-hover:scale-110 transition-transform duration-300">
-                    {social.icon}
-                  </span>
-                </Button>
-              </a>
-            ))}
-          </div>
+        <div className="text-center text-sm text-muted-foreground">
+          © {new Date().getFullYear()} Nandini. All rights reserved.
         </div>
       </div>
     </footer>
