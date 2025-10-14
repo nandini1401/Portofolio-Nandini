@@ -68,7 +68,7 @@ export const About = () => {
     },
     {
       title: "Operator Produksi",
-      company: "Pabrik HD. Hanador",
+      company: "Pabrik HD.Hanador",
       period: "September 2021 - November 2021",
       location: "Karawang, Jawa Barat",
       description: "Melakukan proses pelepasan (demolding) dan pemindahan pintu dari cetakan produksi dengan teknik yang aman dan efisien.",
@@ -93,27 +93,23 @@ export const About = () => {
 
   const education = [
     {
-      degree: "Teknik Informatika",
-      school: "STTI SONY SUGEMA",
-      period: "2021 - 2025",
-      status: "Semester 5",
-      gpa: "3.7/4.0",
+      degree: "Teknik Komputer & Jaringan",
+      school: "SMK PGRI 3 KARAWANG",
+      period: "2020 - 2023",
+      status: "Lulus",
+      gpa: "Nilai Akhir: 84,31",
       achievements: [
-        "Mahasiswa berprestasi",
-        "Juara 1 Lomba Web Design",
-        "Aktif dalam organisasi IT"
+        "Memperoleh nilai akhir 84,31",
       ]
     },
     {
-      degree: "SMA IPA",
-      school: "SMA Negeri 1 Jakarta",
-      period: "2018 - 2021",
-      status: "Lulus",
-      gpa: "85/100",
+      degree: "Teknik Informatika",
+      school: "Sekolah Tinggi Teknologi Informatika Sony Sugema",
+      period: "2023 - Sekarang",
+      status: "Semester 4",
+      gpa: "IPK: 3.25 / 4.00",
       achievements: [
-        "Lulusan terbaik jurusan IPA",
-        "Juara Olimpiade Komputer",
-        "Ketua OSIS periode 2020-2021"
+        "Sedang menempuh Semester 4",
       ]
     }
   ];
