@@ -56,27 +56,37 @@ export const About = () => {
 
   const workExperience = [
     {
-      title: "Freelance UI/UX Designer & Python Developer",
-      company: "Freelance",
-      period: "2022 - Sekarang",
-      location: "Remote",
-      description: "Menangani berbagai project website untuk klien dari berbagai industri",
+      title: "Quality Control (Magang)",
+      company: "PT. Mitra Rubber Industries",
+      period: "September 2021 - November 2021",
+      location: "Bekasi, Jawa Barat",
+      description: "Melakukan pengujian dan inspeksi produk untuk memastikan produk sesuai dengan standar kualitas perusahaan.",
       achievements: [
-        "Menyelesaikan 15+ project website",
-        "Spesialisasi dalam e-commerce dan portfolio",
-        "Rating kepuasan klien 98%"
+        "Bekerjasama dengan tim produksi untuk untuk mengkontrol proses dan memastikan bahwa produk memenuhi standar kualitas yang ditetapkan",
+        "Menjaga kebersihan dan kerapian area Pabrik"
       ]
     },
     {
-      title: "Junior Web Developer",
-      company: "Digital Agency Local",
-      period: "2023 - 2024",
-      location: "Jakarta",
-      description: "Mengembangkan website untuk klien korporat dan UMKM",
+      title: "Operator Produksi",
+      company: "Pabrik HD. Hanador",
+      period: "September 2021 - November 2021",
+      location: "Karawang, Jawa Barat",
+      description: "Melakukan proses pelepasan (demolding) dan pemindahan pintu dari cetakan produksi dengan teknik yang aman dan efisien.",
       achievements: [
-        "Membangun 8 website korporat",
-        "Implementasi responsive design",
-        "Optimasi SEO dan performa"
+        "Melakukan proses pelepasan (demolding) dan pemindahan pintu dari cetakan produksi dengan teknik yang aman dan efisien",
+        "Berkontribusi dalam tim produksi untuk mencapai target harian dengan ketepatan waktu"
+      ]
+    },
+    {
+      title: "Sales Counter",
+      company: "NSC FINANCE",
+      period: "Januari 2025 - Maret 2025",
+      location: "Karawang, Jawa Barat",
+      description: "Melayani dan mendengarkan kebutuhan pelanggan, serta memberikan solusi yang tepat.",
+      achievements: [
+        "Menawarkan produk perusahaan kepada calon customer",
+        "Mengelola dokumen transaksi pelanggan dan menjaga database penjualan",
+        "Menjaga kebersihan dan kerapian area kantor"
       ]
     }
   ];
