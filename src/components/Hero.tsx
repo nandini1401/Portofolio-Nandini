@@ -31,7 +31,7 @@ export const Hero = () => {
                 <br />
                 <span className="text-gradient">UI/UX Designer</span>{" "}
                 <span className="text-foreground">&</span>{" "}
-                <span className="text-gradient">Python Developer</span>
+                <span className="text-gradient">ABC</span>
               </h1>
               
             </div>
