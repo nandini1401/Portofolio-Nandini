@@ -6,19 +6,18 @@ export const Contact = () => {
       icon: <Mail className="w-6 h-6" />,
       title: "Email",
       value: "nandini14012006@gmail.com",
-      description: "Kirim email untuk project inquiry"
+      description: "kirim pesan di email",
     },
     {
       icon: <Phone className="w-6 h-6" />,
       title: "WhatsApp",
       value: "+62 857-1429-1570",
-      description: "Available untuk konsultasi project"
+      description: "",
     },
     {
       icon: <MapPin className="w-6 h-6" />,
-      title: "Location",
-      value: "Jakarta, Indonesia",
-      description: "Open for remote collaboration"
+      title: "Lokasi",
+      value: "Karawang, jawa Barat, Indonesia",
     }
   ];
 
@@ -51,7 +50,7 @@ export const Contact = () => {
                       {info.value}
                     </p>
                     <p className="text-sm text-muted-foreground">
-                      {info.description}
+                    {info.description}
                     </p>
                   </div>
                 </div>

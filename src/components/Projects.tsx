@@ -65,64 +65,9 @@ export const Projects = () => {
       discountPrice: "Rp 6.400.000",
       discount: "20%",
       status: "Completed"
-    },
-    {
-      id: 5,
-      title: "Property Listing Website",
-      category: "Real Estate Website",
-      description: "Platform properti dengan fitur pencarian advanced, virtual tour, dan sistem kontrak online.",
-      image: projectMobile,
-      technologies: ["React", "Express.js", "PostgreSQL", "Mapbox"],
-      features: ["Advanced Search", "Virtual Tour", "Online Contract", "Map Integration"],
-      demoUrl: "https://property-listing-demo.com",
-      originalPrice: "Rp 20.000.000",
-      discountPrice: "Rp 16.000.000",
-      discount: "20%",
-      status: "Completed"
-    },
-    {
-      id: 6,
-      title: "Health & Wellness App",
-      category: "Health Website",
-      description: "Website konsultasi kesehatan online dengan booking dokter, medical records, dan telemedicine features.",
-      image: projectDashboard,
-      technologies: ["React", "Node.js", "MongoDB", "WebRTC"],
-      features: ["Doctor Booking", "Medical Records", "Video Consultation", "Health Tracking"],
-      demoUrl: "https://health-wellness-demo.com",
-      originalPrice: "Rp 25.000.000",
-      discountPrice: "Rp 20.000.000",
-      discount: "20%",
-      status: "In Progress"
-    },
-    {
-      id: 7,
-      title: "Wedding Organizer Website",
-      category: "Event Management Website",
-      description: "Website wedding organizer dengan package booking, vendor management, dan timeline planning tools.",
-      image: projectEcommerce,
-      technologies: ["Vue.js", "Laravel", "MySQL", "Stripe"],
-      features: ["Package Booking", "Vendor Management", "Timeline Planning", "Guest Management"],
-      demoUrl: "https://wedding-organizer-demo.com",
-      originalPrice: "Rp 16.000.000",
-      discountPrice: "Rp 12.800.000",
-      discount: "20%",
-      status: "Completed"
-    },
-    {
-      id: 8,
-      title: "Travel Agency Website",
-      category: "Travel & Tourism Website",
-      description: "Website travel agent dengan booking tour packages, hotel reservations, dan itinerary planner.",
-      image: projectMobile,
-      technologies: ["React", "Node.js", "MongoDB", "Payment Gateway"],
-      features: ["Tour Booking", "Hotel Reservation", "Itinerary Planner", "Travel Guide"],
-      demoUrl: "https://travel-agency-demo.com",
-      originalPrice: "Rp 22.000.000",
-      discountPrice: "Rp 17.600.000",
-      discount: "20%",
-      status: "Completed"
-    }
-  ];
+    }  ];
+
+  
 
   if (selectedProject) {
     return (
@@ -145,12 +90,13 @@ export const Projects = () => {
         {/* Section Header */}
         <div className="text-center mb-16 fade-in-up">
           <h2 className="text-4xl lg:text-6xl font-bold mb-6">
-            <span className="text-foreground">Featured</span>{" "}
-            <span className="text-gradient">Projects</span>
+            <span className="text-foreground">Python </span>{" "}
+            <span className="text-gradient">&</span>{" "}
+            <span className="text-foreground">Innovation Projects </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Koleksi berbagai jenis website yang telah saya kerjakan dengan 
-            design modern dan fungsionalitas yang optimal.
+            Proyek yang berfokus pada pengembangan project Python dan
+              teknologi IoT 
           </p>
         </div>
 

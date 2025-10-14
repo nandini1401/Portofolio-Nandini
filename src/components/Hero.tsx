@@ -26,18 +26,14 @@ export const Hero = () => {
           <div className="space-y-8 slide-in-left">
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
-                <span className="text-foreground">Hi, Saya</span>{" "}
+                <span className="text-foreground">Hallo, Saya</span>{" "}
                 <span className="text-gradient">Nandini</span>
                 <br />
                 <span className="text-gradient">UI/UX Designer</span>{" "}
                 <span className="text-foreground">&</span>{" "}
-                <span className="text-gradient">Web Developer</span>
+                <span className="text-gradient">Python Developer</span>
               </h1>
               
-              <p className="text-xl lg:text-2xl text-muted-foreground max-w-lg leading-relaxed">
-                Mahasiswa STTI SONY SUGEMA semester 5 yang passionate dalam menciptakan 
-                pengalaman digital yang cantik dan fungsional.
-              </p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -47,19 +43,10 @@ export const Hero = () => {
                 onClick={() => scrollToSection('projects')}
                 className="group"
               >
-                <span>Lihat Portfolio</span>
+                <span>Project Saya</span>
                 <ArrowDown className="ml-2 transition-transform group-hover:translate-y-1" />
               </Button>
               
-              <Button 
-                variant="glass" 
-                size="xl"
-                onClick={() => scrollToSection('contact')}
-                className="group"
-              >
-                <Mail className="mr-2 transition-transform group-hover:scale-110" />
-                <span>Hubungi Saya</span>
-              </Button>
             </div>
 
             <div className="pt-4">
@@ -79,34 +66,16 @@ export const Hero = () => {
           <div className="relative slide-in-right">
             <div className="relative">
               {/* Main Avatar */}
-              <div className="card-3d glass rounded-3xl p-8 glow-primary">
+              <div className="card-3d glass rounded-3xl p-5 glow-primary">
                 <img 
                   src={designerAvatar} 
                   alt="UI/UX Designer Avatar" 
-                  className="w-full h-auto rounded-2xl"
+                  className="w-full h-auto rounded-2xl translate-y-8"
+
                 />
               </div>
               
-              {/* Floating Elements */}
-              <div className="absolute -top-4 -right-4 glass rounded-2xl p-4 float" style={{ animationDelay: '1s' }}>
-                <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center">
-                  <span className="text-2xl">🎨</span>
-                </div>
-              </div>
               
-              <div className="absolute -bottom-4 -left-4 glass rounded-2xl p-4 float" style={{ animationDelay: '3s' }}>
-                <div className="w-12 h-12 bg-gradient-secondary rounded-xl flex items-center justify-center">
-                  <span className="text-2xl">💻</span>
-                </div>
-              </div>
-              
-              <div className="absolute top-1/2 -right-8 glass rounded-xl p-3 float" style={{ animationDelay: '2s' }}>
-                <div className="text-xs text-gradient font-semibold">
-                  5+ Years
-                  <br />
-                  Experience
-                </div>
-              </div>
             </div>
           </div>
         </div>

@@ -56,7 +56,7 @@ export const About = () => {
 
   const workExperience = [
     {
-      title: "Freelance UI/UX Designer & Web Developer",
+      title: "Freelance UI/UX Designer & Python Developer",
       company: "Freelance",
       period: "2022 - Sekarang",
       location: "Remote",
@@ -140,7 +140,7 @@ export const About = () => {
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Saya Nandini, mahasiswa semester 5 di STTI SONY SUGEMA yang passionate dalam 
-            UI/UX Design dan Web Development dengan pendekatan yang fresh dan kreatif.
+            UI/UX Design dan Python Development dengan pendekatan yang fresh dan kreatif.
           </p>
         </div>
 
@@ -153,17 +153,11 @@ export const About = () => {
               <h3 className="text-2xl font-bold text-gradient mb-4">My Journey</h3>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Sebagai mahasiswa yang aktif di STTI SONY SUGEMA, saya mengembangkan 
-                  passion dalam design yang tidak hanya cantik tapi juga fungsional dan user-friendly.
-                </p>
+Saya Nandini, mahasiswi semester 5 STTI SONY SUGEMA. Saya berdedikasi tinggi untuk mengasah kemampuan saya dalam UI/UX Design dan Python Development. Semangat saya untuk terus belajar mendorong saya untuk selalu menghasilkan karya dengan perspektif yang inovatif dan kreatif.                </p>
                 <p>
-                  Melalui berbagai project akademik dan freelance, saya belajar memahami 
-                  kebutuhan user dan menciptakan solusi digital yang tepat sasaran.
-                </p>
+Melalui berbagai project akademik dan freelance, saya belajar memahami kebutuhan user dan menciptakan solusi digital yang tepat sasaran.                </p>
                 <p>
-                  Saat ini fokus pada pengembangan skill di bidang Web Development dan 
-                  implementasi design modern dengan teknologi terkini.
-                </p>
+Saat ini, saya fokus pada pengembangan keahlian di bidang Python Development dan implementasi desain modern dengan memanfaatkan teknologi terkini.                </p>
               </div>
             </div>
           </div>
@@ -181,8 +175,7 @@ export const About = () => {
                   <div>
                     <h4 className="font-semibold mb-2">User-Centered Design</h4>
                     <p className="text-muted-foreground text-sm">
-                      Setiap desisi design berdasarkan penelitian dan feedback pengguna
-                    </p>
+Setiap keputusan desain berdasarkan penelitian dan feedback pengguna.                    </p>
                   </div>
                 </div>
                 
@@ -193,8 +186,7 @@ export const About = () => {
                   <div>
                     <h4 className="font-semibold mb-2">Functional Beauty</h4>
                     <p className="text-muted-foreground text-sm">
-                      Menggabungkan estetika yang memukau dengan functionalitas optimal
-                    </p>
+Menggabungkan estetika yang memukau dengan fungsionalitas optimal.                    </p>
                   </div>
                 </div>
                 
@@ -205,8 +197,7 @@ export const About = () => {
                   <div>
                     <h4 className="font-semibold mb-2">Future-Ready</h4>
                     <p className="text-muted-foreground text-sm">
-                      Implementasi teknologi terdepan untuk solusi yang sustainable
-                    </p>
+Implementasi teknologi terdepan untuk solusi yang berkelanjutan.                    </p>
                   </div>
                 </div>
               </div>
@@ -219,7 +210,7 @@ export const About = () => {
           <Tabs defaultValue="skills" className="w-full">
             <TabsList className="grid w-full grid-cols-4 mb-8">
               <TabsTrigger value="skills">Skills & Tools</TabsTrigger>
-              <TabsTrigger value="experience">Pengalaman</TabsTrigger>
+              <TabsTrigger value="experience">Pengalaman Kerja</TabsTrigger>
               <TabsTrigger value="education">Pendidikan</TabsTrigger>
               <TabsTrigger value="certificates">Sertifikat</TabsTrigger>
             </TabsList>

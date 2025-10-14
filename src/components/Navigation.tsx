@@ -59,11 +59,8 @@ export const Navigation = () => {
               
               {/* Logo */}
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-gradient-primary rounded-xl flex items-center justify-center">
-                  <span className="text-xl font-bold text-primary-foreground">D</span>
-                </div>
                 <span className="text-xl font-bold text-gradient hidden sm:block">
-                  Designer
+                  PORTOFOLIO
                 </span>
               </div>
 
@@ -86,7 +83,7 @@ export const Navigation = () => {
               </div>
 
               {/* Theme Toggle & CTA Button */}
-              <div className="hidden md:flex items-center gap-3">
+              <div className="hidden md:flex items-center gap-1">
                 <Button
                   variant="ghost"
                   size="icon"
@@ -101,9 +98,9 @@ export const Navigation = () => {
                 <Button 
                   variant="hero" 
                   size="sm"
-                  onClick={() => scrollToSection('contact')}
+                  onClick={() => scrollToSection('')}
                 >
-                  Let's Talk
+                  👈 Tema
                 </Button>
               </div>
 

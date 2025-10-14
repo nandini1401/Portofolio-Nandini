@@ -3,7 +3,7 @@ import { Phone } from "lucide-react";
 export const WhatsAppFloat = () => {
   const handleWhatsAppClick = () => {
     const message = "Halo Nandini, saya tertarik untuk berkolaborasi atau memesan website. Bisa kita diskusi?";
-    const whatsappUrl = `https://wa.me/6285714291570?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/+6285714291570?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 

@@ -147,7 +147,7 @@ export const ProjectDetail = ({ project, onBack }: ProjectDetailProps) => {
                 size="lg"
                 onClick={() => {
                   const message = `Halo Nandini, saya tertarik dengan project ${project.title}. Bisa kita diskusi lebih lanjut?`;
-                  const whatsappUrl = `https://wa.me/6285714291570?text=${encodeURIComponent(message)}`;
+                  const whatsappUrl = `https://wa.me/+6285714291570?text=${encodeURIComponent(message)}`;
                   window.open(whatsappUrl, '_blank');
                 }}
               >
