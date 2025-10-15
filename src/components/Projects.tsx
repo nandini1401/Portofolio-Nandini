@@ -14,26 +14,24 @@ export const Projects = () => {
       id: 1,
       title: "wedding invitation website",
       category: "Landing Page Web",
-      description: "Platform belanja online untuk produk kecantikan dengan fitur virtual try-on dan review system yang interaktif.",
+      description: "Website undangan pernikahan digital yang modern dan elegan, dilengkapi dengan fitur RSVP online dan informasi acara lengkap.",
       image: projectEcommerce,
       technologies: ["html", "css", "Java Script"],
-      features: ["Virtual Try-On", "Product Reviews", "Wishlist", "Payment Gateway"],
-      demoUrl: "web-invite-wedding.vercel.app",
-      status: "Completed"
+      features: ["Lagu", "Lokasi", "Kontak", "Detail Transfer"],
+      demoUrl: "https://web-invite-wedding.vercel.app/",
+      status: "Selesai"
     },
     {
       id: 2,
-      title: "Restaurant Booking System",
-      category: "Booking Website",
+      title: "UI Design ",
+      category: "Aplikasi LAPOR",
       description: "Website reservasi restoran dengan sistem booking real-time, menu digital, dan integrasi payment online.",
       image: projectMobile,
-      technologies: ["Vue.js", "Laravel", "MySQL", "Midtrans"],
-      features: ["Real-time Booking", "Digital Menu", "Online Payment", "Table Management"],
-      demoUrl: "https://restaurant-booking-demo.com",
-      originalPrice: "Rp 12.000.000",
-      discountPrice: "Rp 9.600.000",
-      discount: "20%",
-      status: "Completed"
+      technologies: ["Figma"],
+      features: ["Tampilan Design"],
+      demoUrl: "https://www.figma.com/proto/OFNYmeeOtDVzWH6BUpsz1Q/LAPOR--?node-id=74-30&t=tjUt2Di3Df3M8cHd-1&scaling=scale-down&content-scaling=responsive&page-id=1%3A2&starting-point-node-id=4%3A4&show-proto-sidebar=1",
+      // pricing removed
+      status: "Proses"
     },
     {
       id: 3,
@@ -44,9 +42,7 @@ export const Projects = () => {
       technologies: ["React", "Firebase", "Node.js", "Socket.io"],
       features: ["Video Streaming", "Interactive Quiz", "Progress Tracking", "Certificate"],
       demoUrl: "https://learning-platform-demo.com",
-      originalPrice: "Rp 18.000.000",
-      discountPrice: "Rp 14.400.000",
-      discount: "20%",
+      // pricing removed
       status: "Completed"
     },
     {
@@ -58,9 +54,7 @@ export const Projects = () => {
       technologies: ["HTML/CSS", "JavaScript", "GSAP", "EmailJS"],
       features: ["Photo Gallery", "Lookbook", "Contact Form", "Responsive Design"],
       demoUrl: "https://fashion-portfolio-demo.com",
-      originalPrice: "Rp 8.000.000",
-      discountPrice: "Rp 6.400.000",
-      discount: "20%",
+      // pricing removed
       status: "Completed"
     }  ];
 
@@ -126,12 +120,7 @@ export const Projects = () => {
                   </div>
 
                   {/* Discount Badge */}
-                  <div className="absolute top-3 left-3">
-                    <div className="bg-gradient-primary text-primary-foreground px-2 py-1 rounded-full text-xs font-bold flex items-center gap-1">
-                      <span>%</span>
-                      <span>{project.discount}</span>
-                    </div>
-                  </div>
+                  {/* discount badge removed */}
                 </div>
               </div>
 
@@ -166,17 +155,7 @@ export const Projects = () => {
                   )}
                 </div>
 
-                {/* Pricing */}
-                <div className="flex items-center justify-between pt-4 border-t border-glass-border/20">
-                  <div>
-                    <div className="text-xs text-muted-foreground line-through">
-                      {project.originalPrice}
-                    </div>
-                    <div className="text-lg font-bold text-gradient">
-                      {project.discountPrice}
-                    </div>
-                  </div>
-                  
+                <div className="pt-4 border-t border-glass-border/20 flex justify-end">
                   <a 
                     href={project.demoUrl}
                     target="_blank"

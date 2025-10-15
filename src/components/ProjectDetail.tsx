@@ -11,9 +11,6 @@ interface ProjectDetailProps {
     technologies: string[];
     features: string[];
     demoUrl: string;
-    originalPrice: string;
-    discountPrice: string;
-    discount: string;
     status: string;
   };
   onBack: () => void;
@@ -61,29 +58,10 @@ export const ProjectDetail = ({ project, onBack }: ProjectDetailProps) => {
               </div>
 
               {/* Discount Badge */}
-              <div className="absolute top-4 left-4">
-                <div className="bg-gradient-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-bold flex items-center gap-1">
-                  <span>%</span>
-                  <span>{project.discount}</span>
-                </div>
-              </div>
+              {/* discount badge removed */}
             </div>
 
-            {/* Pricing */}
-            <div className="glass rounded-2xl p-6">
-              <h3 className="text-lg font-bold mb-4 text-gradient">Pricing</h3>
-              <div className="space-y-2">
-                <div className="text-sm text-muted-foreground line-through">
-                  {project.originalPrice}
-                </div>
-                <div className="text-2xl font-bold text-gradient">
-                  {project.discountPrice}
-                </div>
-                <div className="text-sm text-muted-foreground">
-                  Save {project.discount} with current promotion
-                </div>
-              </div>
-            </div>
+            {/* pricing removed */}
           </div>
 
           {/* Project Details */}
