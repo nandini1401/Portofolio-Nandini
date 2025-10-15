@@ -12,16 +12,13 @@ export const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "Beauty E-Commerce Platform",
-      category: "E-Commerce Website",
+      title: "wedding invitation website",
+      category: "Landing Page Web",
       description: "Platform belanja online untuk produk kecantikan dengan fitur virtual try-on dan review system yang interaktif.",
       image: projectEcommerce,
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+      technologies: ["html", "css", "Java Script"],
       features: ["Virtual Try-On", "Product Reviews", "Wishlist", "Payment Gateway"],
-      demoUrl: "https://beauty-store-demo.com",
-      originalPrice: "Rp 15.000.000",
-      discountPrice: "Rp 12.000.000",
-      discount: "20%",
+      demoUrl: "web-invite-wedding.vercel.app",
       status: "Completed"
     },
     {

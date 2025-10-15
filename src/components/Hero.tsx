@@ -121,7 +121,7 @@ export const Hero = () => {
           <div className="relative slide-in-right">
             <div className="relative">
               {/* Main Avatar */}
-              <div className="card-3d glass rounded-3xl p-6 glow-primary">
+              <div className="card-3d glass rounded-3xl p-8 glow-primary">
                 <img 
                   src={designerAvatar} 
                   alt="UI/UX Designer Avatar" 

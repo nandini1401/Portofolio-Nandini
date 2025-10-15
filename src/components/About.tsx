@@ -3,19 +3,13 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Code, Palette, Smartphone, Zap, Briefcase, GraduationCap, Award, Star, Calendar, MapPin } from "lucide-react";
 
-// Certificate images
-import certGoogleUX from "@/assets/cert-google-ux.jpg";
-import certMetaFrontend from "@/assets/cert-meta-frontend.jpg";
-import certAWSCloud from "@/assets/cert-aws-cloud.jpg";
-import certReactDev from "@/assets/cert-react-dev.jpg";
-import certAdobePhotoshop from "@/assets/cert-adobe-photoshop.jpg";
-import certFigmaAdvanced from "@/assets/cert-figma-advanced.jpg";
-import certFreeCodeCampJS from "@/assets/cert-freecodecamp-js.jpg";
-import certFreeCodeCampRWD from "@/assets/cert-freecodecamp-rwd.jpg";
-import certIBMPython from "@/assets/cert-ibm-python.jpg";
-import certGoogleMarketing from "@/assets/cert-google-marketing.jpg";
-import certScrumMaster from "@/assets/cert-scrum-master.jpg";
-import certCiscoSecurity from "@/assets/cert-cisco-security.jpg";
+// Certificate images (using available assets in the repo)
+import certGreatLearning from "@/assets/cert-google-ux.jpg";
+import certRevoU from "@/assets/cert-meta-frontend.jpg";
+import certHabiskerja from "@/assets/cert-aws-cloud.jpg";
+import certMerdeka from "@/assets/cert-react-dev.jpg";
+import certDicoding from "@/assets/cert-adobe-photoshop.jpg";
+import certSkilvul from "@/assets/cert-figma-advanced.jpg";
 
 export const About = () => {
   const skills = [
@@ -115,18 +109,12 @@ export const About = () => {
   ];
 
   const certificates = [
-    { name: "Google UX Design Professional Certificate", issuer: "Google", year: "2024", image: certGoogleUX },
-    { name: "Meta Front-End Developer Certificate", issuer: "Meta", year: "2024", image: certMetaFrontend },
-    { name: "AWS Cloud Practitioner", issuer: "Amazon", year: "2023", image: certAWSCloud },
-    { name: "React Developer Certification", issuer: "React Training", year: "2023", image: certReactDev },
-    { name: "Adobe Certified Expert - Photoshop", issuer: "Adobe", year: "2023", image: certAdobePhotoshop },
-    { name: "Figma Advanced Certification", issuer: "Figma", year: "2024", image: certFigmaAdvanced },
-    { name: "JavaScript Algorithms Certification", issuer: "FreeCodeCamp", year: "2023", image: certFreeCodeCampJS },
-    { name: "Responsive Web Design", issuer: "FreeCodeCamp", year: "2022", image: certFreeCodeCampRWD },
-    { name: "Python for Data Science", issuer: "IBM", year: "2023", image: certIBMPython },
-    { name: "Digital Marketing Fundamentals", issuer: "Google", year: "2024", image: certGoogleMarketing },
-    { name: "Scrum Master Certified", issuer: "Scrum Alliance", year: "2024", image: certScrumMaster },
-    { name: "Cybersecurity Fundamentals", issuer: "Cisco", year: "2023", image: certCiscoSecurity }
+    { name: "Praktik SQL Injection", issuer: "Habis Kerja.com", year: " Juni 2024", image: certGreatLearning },
+    { name: "Intro to Data Analytics", issuer: "RevoU (Mini Course)", year: "February 2024", image: certRevoU },
+    { name: "Prompt Engineering untuk Software Developer", issuer: "Dicoding", year: "September 2025", image: certHabiskerja },
+    { name: "Your Path Career OSCP Journey (Sharing Session)", issuer: "Merdeka Siber", year: "September 2025", image: certMerdeka },
+    { name: "Coding di Skilvul Playground", issuer: "Skilvul", year: "September 2025", image: certDicoding },
+    { name: "PHP for Beginners", issuer: "Great Learning", year: "December 2023", image: certSkilvul }
   ];
 
   return (

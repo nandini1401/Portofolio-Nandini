@@ -52,7 +52,7 @@ export const Footer = () => {
 
       <div className="container mx-auto px-106 relative z-100">
         <div className="text-center text-sm text-muted-foreground">
-          © {new Date().getFullYear()} Nandini. All rights reserved.
+           {new Date().getFullYear()} Portofolio Nandini
         </div>
       </div>
     </footer>
