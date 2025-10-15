@@ -33,7 +33,7 @@ export const ProjectDetail = ({ project, onBack }: ProjectDetailProps) => {
           className="mb-8 hover:text-gradient transition-colors"
         >
           <ArrowLeft className="mr-2 w-4 h-4" />
-          Back to Projects
+          Kembali
         </Button>
 
         <div className="grid lg:grid-cols-2 gap-12 items-start">
