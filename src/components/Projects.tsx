@@ -23,9 +23,9 @@ export const Projects = () => {
     },
     {
       id: 2,
-      title: "UI Design ",
-      category: "Aplikasi LAPOR",
-      description: "Website reservasi restoran dengan sistem booking real-time, menu digital, dan integrasi payment online.",
+      title: "Aplikasi LAPOR ",
+      category: "UI Design",
+      description: "Aplikasi Laporan Masyarakat kepada Pihak Desa berbasis digital dengan sistem pelaporan terintegrasi dan notifikasi real-time.",
       image: projectMobile,
       technologies: ["Figma"],
       features: ["Tampilan Design"],
