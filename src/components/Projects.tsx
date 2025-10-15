@@ -35,15 +35,15 @@ export const Projects = () => {
     },
     {
       id: 3,
-      title: "Educational Learning Platform",
-      category: "Learning Management System",
-      description: "Platform pembelajaran online dengan video streaming, quiz interaktif, dan tracking progress siswa.",
+      title: "Kampus Digital",
+      category: "UI Design",
+      description: "Aplikasi kampus terintegrasi untuk absensi, melihat jadwal, unggah tugas, dan akses sistem akademik penting seperti KHS dan KRS dalam satu platform digital.",
       image: projectDashboard,
-      technologies: ["React", "Firebase", "Node.js", "Socket.io"],
-      features: ["Video Streaming", "Interactive Quiz", "Progress Tracking", "Certificate"],
-      demoUrl: "https://learning-platform-demo.com",
+      technologies: ["Figma"],
+      features: ["Tampilan Fitur Aplikasi"],
+      demoUrl: "https://www.figma.com/proto/fwnjaz4zTXpO0S5DQcYCVd/Untitled?node-id=35-73&t=VWSUbfL8G49ZIQpx-1",
       // pricing removed
-      status: "Completed"
+      status: "Proses"
     },
     {
       id: 4,
