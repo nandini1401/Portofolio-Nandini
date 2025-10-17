@@ -63,6 +63,7 @@ export const Hero = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           
+          
           {/* Text Content */}
           <div className="space-y-8 slide-in-left">
             <div className="space-y-4">

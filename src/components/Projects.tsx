@@ -8,7 +8,10 @@ import webinvite from '@/assets/webinvite.jpg';
 import fashionPortfolio from '@/assets/fashion-portfolio.jpg';
 import ui2 from '@/assets/ui-2.jpg';
 import ui3 from '@/assets/ui-3.jpg';
+import designerAvatar from '@/assets/human.jpg';
 import safevisionImg from '@/assets/safevision.jpg';
+import ml3 from '@/assets/qr-generator.jpg';
+import nadinFlorist from '@/assets/nadin-florist.jpg';
 // Use unique inline SVG data-URIs so each project has its own image (prevents shared-image updates)
 
 const makeSvgDataUri = (bg: string, label: string) => {
@@ -164,9 +167,19 @@ export const Projects = () => {
       demoUrl: "https://fashion-portfolio-demo.com",
       status: "proses"
     },
-    
     {
-      id: 6,
+      id: 5,
+      title: "Website Nadin Florist",
+      category: "E-commerce",
+      description: "Website toko bunga e-commerce yang responsif, menampilkan katalog produk, cart, dan checkout sederhana untuk memudahkan pelanggan membeli rangkaian bunga.",
+      image: nadinFlorist,
+      technologies: ["HTML", "CSS", "JavaScript"],
+      features: ["Product Catalog", "Cart", "Checkout"],
+      demoUrl: "https://nadin-florist.example.com",
+      status: "Selesai"
+    },
+    {
+      id: 5,
       title: "Serenity Cafe",
       category: "UI Design",
       description: "Serenity Cafe adalah desain UI untuk aplikasi mobile yang secara khusus dibuat untuk meningkatkan pengalaman pelanggan sebuah coffee shop. Aplikasi ini dirancang untuk menjembatani kafe dengan pelanggannya secara digital.",
@@ -174,7 +187,7 @@ export const Projects = () => {
       technologies: ["Figma"],
       features: ["tampilan produk", "pemesanan produk", "payment"],
       demoUrl: "https://www.figma.com/proto/m4WsgmyRIDEOEmgaulrNtO/Coffee-Shop-App?node-id=3-5",
-      status: "Completed"
+      status: "selesai"
     }
   ];
 
@@ -191,31 +204,33 @@ export const Projects = () => {
   image: safevisionImg,
       technologies: ['Python', 'OpenCV', 'TensorFlow', 'Arduino'],
       features: ['Ultrasonic sensor integration', 'Buzzer alert', 'Real-time object detection', 'Snapshot & alert via server'],
-      demoUrl: 'https://safevision-demo.example.com',
-      status: 'Completed'
+      demoUrl: 'https://www.instagram.com/reel/DPkURevj4Q4/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+      status: 'selesai'
     },
     {
       id: 102,
-      title: 'Klasifikasi Sentimen',
+      title: 'Human Detection',
       category: 'Machine Learning',
-      description: 'Sistem klasifikasi sentimen teks menggunakan NLP dan model supervised.',
-  image: ui1,
-      technologies: ['Python', 'NLTK', 'TensorFlow'],
-      features: ['Text Preprocessing', 'Embedding', 'Model Training'],
-      demoUrl: 'https://ml-sentiment-demo.example.com',
-      status: 'Completed'
+      description: 'Human Detection Sistem pelacakan objek real-time untuk aplikasi pengawasan menggunakan OpenCV dan algoritma tracking.',
+  image: designerAvatar,
+      technologies: ['Python', 'OpenCV', 'SORT'],
+      features: ['human tracking'],
+      demoUrl: 'https://www.linkedin.com/posts/nandini06_100harinulis-python-machinelearning-activity-7328080441624723457-irDo?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEmmLdwBjYgigTOzLJo_iE-GngFtPoLZH_w',
+      status: 'Selesai'
     },
     {
       id: 103,
-      title: 'Deteksi Anomali',
-      category: 'Machine Learning',
-      description: 'Sistem deteksi anomali untuk monitoring performa sistem menggunakan model unsupervised.',
-  image: ui1,
-      technologies: ['Python', 'IsolationForest', 'Pandas'],
-      features: ['Anomaly Scoring', 'Alerting'],
-      demoUrl: 'https://ml-anomaly-demo.example.com',
+      title: 'File to QR/Barcode Converter',
+      category: 'Python Project',
+      description: 'Project Python yang mengubah berkas (JPG, PDF, gambar, dll.) menjadi kode QR agar mudah dibagikan dan dipindai.',
+  image: ((): string => { try { const m = (import.meta as any).globEager('/src/assets/*.{png,jpg,jpeg,webp}')['/src/assets/qr-generator.jpg']; return (m?.default ?? m) as string; } catch { return ml3; } })(),
+      technologies: ['Python', 'qrcode', 'Pillow'],
+      features: ['Convert files to QR/Barcode', 'Supports JPG/PDF/Images', 'Generate downloadable image'],
+      demoUrl: 'https://qr-generator-demo.example.com',
       status: 'Completed'
     }
+    
+    
   ];
 
   if (selectedProject) {
@@ -238,14 +253,10 @@ export const Projects = () => {
         {/* Section Header */}
         <div className="text-center mb-16 fade-in-up">
           <h2 className="text-4xl lg:text-6xl font-bold mb-6">
-            <span className="text-foreground">Python </span>{" "}
-            <span className="text-gradient">&</span>{" "}
-            <span className="text-foreground">Innovation Projects </span>
+            <span className="text-foreground">Project Saya</span>{" "}
+            <span className="text-gradient"></span>{" "}
+            <span className="text-foreground"> </span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Proyek yang berfokus pada pengembangan project Python dan
-              teknologi IoT 
-          </p>
         </div>
 
         {/* UI Design Projects */}
@@ -258,7 +269,7 @@ export const Projects = () => {
                   <div className="relative overflow-hidden rounded-2xl">
                     <img src={project.image} alt={project.title} className="w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110" />
                     <div className="absolute top-3 right-3">
-                      <div className={`px-2 py-1 rounded-full text-xs font-semibold ${project.status === 'Completed' ? 'bg-success text-success-foreground' : 'bg-gradient-primary text-primary-foreground'}`}>
+                      <div className={`px-2 py-1 rounded-full text-xs font-semibold ${project.status === 'selesai' ? 'bg-success text-success-foreground' : 'bg-gradient-primary text-primary-foreground'}`}>
                         {project.status}
                       </div>
                     </div>
@@ -291,7 +302,7 @@ export const Projects = () => {
                   <div className="relative overflow-hidden rounded-2xl">
                     <img src={project.image} alt={project.title} className="w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110" />
                     <div className="absolute top-3 right-3">
-                      <div className={`px-2 py-1 rounded-full text-xs font-semibold ${project.status === 'Completed' ? 'bg-success text-success-foreground' : 'bg-gradient-primary text-primary-foreground'}`}>
+                      <div className={`px-2 py-1 rounded-full text-xs font-semibold ${project.status === 'selesai' ? 'bg-success text-success-foreground' : 'bg-gradient-primary text-primary-foreground'}`}>
                         {project.status}
                       </div>
                     </div>
@@ -324,7 +335,7 @@ export const Projects = () => {
                   <div className="relative overflow-hidden rounded-2xl">
                     <img src={project.image} alt={project.title} className="w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110" />
                     <div className="absolute top-3 right-3">
-                      <div className={`px-2 py-1 rounded-full text-xs font-semibold ${project.status === 'Completed' ? 'bg-success text-success-foreground' : 'bg-gradient-primary text-primary-foreground'}`}>
+                      <div className={`px-2 py-1 rounded-full text-xs font-semibold ${project.status === 'selesai' ? 'bg-success text-success-foreground' : 'bg-gradient-primary text-primary-foreground'}`}>
                         {project.status}
                       </div>
                     </div>

@@ -10,6 +10,7 @@ import certHabiskerja from "@/assets/cert-aws-cloud.jpg";
 import certMerdeka from "@/assets/cert-react-dev.jpg";
 import certDicoding from "@/assets/cert-adobe-photoshop.jpg";
 import certSkilvul from "@/assets/cert-figma-advanced.jpg";
+import portrait from '@/assets/portrait.png';
 
 export const About = () => {
   const skills = [
@@ -133,65 +134,75 @@ export const About = () => {
             <span className="text-foreground">Saya</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Saya Nandini, mahasiswa semester 5 di STTI SONY SUGEMA yang passionate dalam 
-            UI/UX Design dan Python Development dengan pendekatan yang fresh dan kreatif.
+            Saya Nandini, mahasiswa semester 5 di STTI SONY SUGEMA yang passionate dalam UI/UX Design dan Python Development dengan pendekatan yang fresh dan kreatif.
           </p>
-        </div>
 
-        {/* Main Content */}
-        <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
-          
-          {/* Story Section */}
-          <div className="space-y-6 slide-in-left">
-            <div className="glass rounded-3xl p-8 card-3d">
-              <h3 className="text-2xl font-bold text-gradient mb-4">My Journey</h3>
-              <div className="space-y-4 text-muted-foreground leading-relaxed">
-                <p>
-Saya Nandini, mahasiswi semester 5 STTI SONY SUGEMA. Saya berdedikasi tinggi untuk mengasah kemampuan saya dalam UI/UX Design dan Python Development. Semangat saya untuk terus belajar mendorong saya untuk selalu menghasilkan karya dengan perspektif yang inovatif dan kreatif.                </p>
-                <p>
-Melalui berbagai project akademik dan freelance, saya belajar memahami kebutuhan user dan menciptakan solusi digital yang tepat sasaran.                </p>
-                <p>
-Saat ini, saya fokus pada pengembangan keahlian di bidang Python Development dan implementasi desain modern dengan memanfaatkan teknologi terkini.                </p>
+          {/* Main Content: two-column layout on lg+ where left column is portrait and right column stacks Journey + Philosophy */}
+          <div className="grid lg:grid-cols-2 gap-1 items-start mb-6">
+            {/* Left: Portrait (slightly larger) */}
+            <div className="hidden md:flex items-center justify-center">
+              <div className="w-80 md:w-96 lg:w-[450px] transform-gpu" style={{ perspective: 10000 }}>
+                <img
+                  src={portrait}
+                  alt="Portrait"
+                  className="w-full rounded-2xl shadow-2xl object-cover"
+                  style={{
+                    transformStyle: 'preserve-3d',
+                    transform: 'rotateY(-6deg) translateZ(6px) scale(1.03)',
+                    boxShadow: '0 18px 36px rgba(2,6,23,0.45)',
+                    maxHeight: '560px',
+                    objectPosition: 'center bottom'
+                  }}
+                />
               </div>
             </div>
-          </div>
 
-          {/* Philosophy Section */}
-          <div className="slide-in-right">
-            <div className="glass rounded-3xl p-8 card-3d space-y-6">
-              <h3 className="text-2xl font-bold text-gradient">Design Philosophy</h3>
-              
-              <div className="space-y-4">
-                <div className="flex items-start gap-4">
-                  <div className="w-8 h-8 bg-gradient-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <span className="text-xs font-bold">1</span>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold mb-2">User-Centered Design</h4>
-                    <p className="text-muted-foreground text-sm">
-Setiap keputusan desain berdasarkan penelitian dan feedback pengguna.                    </p>
+            {/* Right: stack My Journey (top) and Design Philosophy (below) */}
+            <div className="space-y-6">
+              <div className="space-y-6 slide-in-left">
+                <div className="glass rounded-3xl p-8 card-3d">
+                  <h3 className="text-2xl font-bold text-gradient mb-4">My Journey</h3>
+                  <div className="space-y-4 text-muted-foreground leading-relaxed">
+                    <p>
+                      Saya Nandini, mahasiswi semester 5 STTI SONY SUGEMA. Saya berdedikasi tinggi untuk mengasah kemampuan saya dalam UI/UX Design dan Python Development. Semangat saya untuk terus belajar mendorong saya untuk selalu menghasilkan karya dengan perspektif yang inovatif dan kreatif.
+                    </p>
                   </div>
                 </div>
-                
-                <div className="flex items-start gap-4">
-                  <div className="w-8 h-8 bg-gradient-secondary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <span className="text-xs font-bold">2</span>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold mb-2">Functional Beauty</h4>
-                    <p className="text-muted-foreground text-sm">
-Menggabungkan estetika yang memukau dengan fungsionalitas optimal.                    </p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start gap-4">
-                  <div className="w-8 h-8 bg-gradient-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <span className="text-xs font-bold">3</span>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold mb-2">Future-Ready</h4>
-                    <p className="text-muted-foreground text-sm">
-Implementasi teknologi terdepan untuk solusi yang berkelanjutan.                    </p>
+              </div>
+
+              <div className="slide-in-right">
+                <div className="glass rounded-3xl p-8 card-3d space-y-6">
+                  <h3 className="text-2xl font-bold text-gradient">Design Philosophy</h3>
+                  <div className="space-y-4">
+                    <div className="flex items-start gap-4">
+                      <div className="w-8 h-8 bg-gradient-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                        <span className="text-xs font-bold">1</span>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold mb-2">User-Centered Design</h4>
+                        <p className="text-muted-foreground text-sm">Setiap keputusan desain berdasarkan penelitian dan feedback pengguna.</p>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start gap-4">
+                      <div className="w-8 h-8 bg-gradient-secondary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                        <span className="text-xs font-bold">2</span>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold mb-2">Functional Beauty</h4>
+                        <p className="text-muted-foreground text-sm">Menggabungkan estetika yang memukau dengan fungsionalitas optimal.</p>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start gap-4">
+                      <div className="w-8 h-8 bg-gradient-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                        <span className="text-xs font-bold">3</span>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold mb-2">Future-Ready</h4>
+                        <p className="text-muted-foreground text-sm">Implementasi teknologi terdepan untuk solusi yang berkelanjutan.</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
