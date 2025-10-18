@@ -10,6 +10,7 @@ import certHabiskerja from "@/assets/cert-aws-cloud.jpg";
 import certMerdeka from "@/assets/cert-react-dev.jpg";
 import certDicoding from "@/assets/cert-adobe-photoshop.jpg";
 import certSkilvul from "@/assets/cert-figma-advanced.jpg";
+import Sp from "@/assets/Sp.jpg";
 import portrait from '@/assets/portrait.png';
 
 export const About = () => {
@@ -115,7 +116,9 @@ export const About = () => {
     { name: "Prompt Engineering untuk Software Developer", issuer: "Dicoding", year: "September 2025", image: certHabiskerja },
     { name: "Your Path Career OSCP Journey (Sharing Session)", issuer: "Merdeka Siber", year: "September 2025", image: certMerdeka },
     { name: "Coding di Skilvul Playground", issuer: "Skilvul", year: "September 2025", image: certDicoding },
-    { name: "PHP for Beginners", issuer: "Great Learning", year: "December 2023", image: certSkilvul }
+    { name: "PHP for Beginners", issuer: "Great Learning", year: "December 2023", image: certSkilvul },
+    { name: "GitLab", issuer: "Fusi Solution", year: "Oktober 2025", image: Sp }
+
   ];
 
   return (
