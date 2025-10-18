@@ -102,7 +102,7 @@ export const About = () => {
       school: "Sekolah Tinggi Teknologi Informatika Sony Sugema",
       period: "2023 - Sekarang",
       status: "Semester 4",
-      gpa: "IPK: 3.25 / 4.00",
+      gpa: "IPK: 2.90 / 4.00",
       achievements: [
         "Sedang menempuh Semester 5",
       ]
